@@ -5,6 +5,7 @@ import java.util.*;
 public class isPrime {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
+        System.out.print("Enter Number: ");
         int n = sc.nextInt();
         // int x= 0 ;      //0 means prime
         // for(int i =2; i<=n-1; i++){
@@ -17,12 +18,12 @@ public class isPrime {
         // if(x==1) System.out.println("Composite Number");
         // if(x==0) System.out.println("Prime Number");
 
+         
         boolean flag = true; // true means prime
         for (int i = 2; i <= n - 1; i++) {
             if (n % i == 0) { // '1' to 'n' ka ek factor nikla
                 flag = false; // false means composite number
                 break;
-
             }
         }
         if(n==1) System.out.println("NEither Prime nor Composite");
@@ -30,6 +31,10 @@ public class isPrime {
             System.out.println("Composite Number");
         else 
             System.out.println("Prime Number");
+        
+
+        
+
         sc.close();
     }
 }
